@@ -3,7 +3,8 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   root 'pages#home'
-  get 'age', to: 'pages#age'
+  put 'age', to: 'pages#person'
+  post 'stringify', to: 'pages#stringify'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
@@ -28,7 +29,7 @@ Rails.application.routes.draw do
   # Example resource route with sub-resources:
   #   resources :products do
   #     resources :comments, :sales
-  #     resource :seller
+  #     resource :selleru
   #   end
 
   # Example resource route with more complex sub-resources:
